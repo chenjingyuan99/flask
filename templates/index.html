@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Cloud Demo</title>
+</head>
+<body>
+    <h1>Upload your files and the picture</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        People CSV: <input type="file" name="people"><br><br>
+        Picture: <input type="file" name="picture"><br><br>
+        <input type="submit" value="Upload">
+    </form>
+
+    <h2>Search for a Person</h2>
+    <form action="/search" method="post">
+        Name: <input type="text" name="name"><br><br>
+        <input type="submit" value="Search">
+    </form>
+
+    <h2>Update Keywords</h2>
+    <form action="/update" method="post">
+        Name: <input type="text" name="name"><br><br>
+        New Keywords: <input type="text" name="keywords"><br><br>
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>
